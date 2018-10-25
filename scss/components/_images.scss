@@ -1,0 +1,27 @@
+.img--avatar {
+    width: 35%;
+    display: block;
+    margin: auto;
+  
+}
+.img--logo {
+    display: block;
+    margin: auto;
+}
+
+.img--frame {
+    display: flex;
+    margin: auto;
+    width: 90%;
+    margin-bottom: 15px;
+    border: 1px solid $text-color;
+    padding: 6px;
+}
+
+//Media Queries
+
+@include mq(large) {
+    .grid__col--6 {
+        width: 50%;
+    }
+}

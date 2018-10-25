@@ -1,0 +1,57 @@
+
+.btn {
+   @include btn;
+    width: 25%;
+    
+&--default {
+    background-color: $color-secondary;
+}
+
+&--success {
+    background-color: $success;
+}
+
+&--error {
+   background-color: $error;
+}
+
+&--warning {
+  background-color: $warning;
+}
+
+&--info {
+    background-color: $info;
+  }
+}
+
+.grid__col--12 {
+    display: flex;
+    flex-direction: column;
+           @include mq(large)  {
+                  @include flexy ($dir: row, $just: center);
+                    width: 100%;
+                }
+       
+}
+
+//Media Queries
+
+@include mq(large)  {
+    btn--default.theme__colors,
+    {
+      width: 100px;
+    }
+
+}
+
+@include mq(medium) {
+    .btn--default.theme__colors,
+    .btn--success.theme__colors,
+    .btn--error.theme__colors,
+    .btn--warning.theme__colors,
+    .btn--info.theme__colors {
+   @include btn;
+    width: 100%;
+    }
+}
+

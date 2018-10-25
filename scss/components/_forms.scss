@@ -1,0 +1,27 @@
+.form {
+    @include flexy(flex, column, center);
+
+        &__label--hidden {
+            display: none;
+        }
+
+        &__input {
+        border-bottom: 3px solid $color-primary;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+}
+
+
+//Media Queries
+
+@include mq(large) {
+     .grid__col--4 {
+        width: 33.3%;
+        
+     }
+ }

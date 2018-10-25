@@ -1,0 +1,45 @@
+//Button mixins
+
+   @mixin btn {
+    color: $white;
+    border: none;
+    line-height: 22px;
+    margin: 7px;
+}
+
+
+//Media Queries mixins
+
+@mixin mq($break) {
+    @if $break == "small" {
+        @media (min-width: $break-small) and (max-width: $break-mobile) {
+            @content;
+        }
+    }
+
+    @else if $break == "medium" {
+        @media (min-width: $break-mobile + 1) {
+            @content;
+        }
+    }
+    @else if $break == "large" {
+        @media (min-width: $break-desktop){
+            @content;
+        }
+    }
+
+@else {
+    @error "No value could be retrieved for #{$break}"
+}
+
+}
+
+//Flexbox mixins
+
+
+@mixin flexy($display: flex, $dir: null,
+$just: null) {
+    display: $display;
+    flex-direction: $dir;
+    justify-content: $just;
+}

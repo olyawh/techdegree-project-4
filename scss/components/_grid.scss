@@ -1,0 +1,105 @@
+
+$charlotte: #AEF9F2;
+$blue-chill: #0E8390;
+$malibu: #78D6F2;
+$perfume: #ECB4F9;
+$fern: #6BB37B;
+$kobi: #ECACBE;
+$apricot: #EB947A;
+
+
+//Colors
+
+.grid__col--12.theme__colors {
+    background-color: $charlotte;
+}
+
+.grid__col--6.theme__colors {
+   background-color: $blue-chill;
+
+}
+
+
+.grid__col--4.theme__colors {
+    background-color: $malibu;
+}
+
+.grid__col--3.theme__colors {
+    background-color: $perfume;
+}
+
+.grid__col--5.theme__colors {
+    background-color: $fern;
+}
+
+.grid__col--7.theme__colors {
+    background-color: $kobi;
+}
+
+.grid__col--8.theme__colors {
+   background-color: $apricot;
+}
+
+.grid__col--4.theme__colors {
+    background-color: $malibu;
+}
+
+.centered.grid__col--7.theme__colors {
+    background-color: $kobi;
+}
+
+.theme__colors {
+    color: $text-color;
+    border-radius: 5px;
+    margin: 2px;
+    line-height: 20px;
+    padding: 5px;
+}
+
+.grid__row {
+    margin: 20px;
+}
+
+//Media Queries
+
+@include mq(large) {
+    .grid__row {
+        display: flex;
+        direction: row;
+     }
+
+     
+        .grid__col--12.theme__colors {
+            width: 100%;
+        }
+
+        .grid__col--6.theme__colors {
+            width: 50%;
+        }
+
+        .grid__col--4.theme__colors {
+            width: 33.3%;
+        }
+
+        .grid__col--3.theme__colors {
+            width: 25%;
+        }
+        .grid__col--5.theme__colors {
+            width: 40%;
+        }
+        .grid__col--7.theme__colors {
+            width: 60%;
+        }
+        .grid__col--8.theme__colors {
+            width: 66.7%;
+        }
+        .theme__colors {
+            text-align: center;
+        }
+        .centered.grid__col--7.theme__colors {
+            margin: auto;
+        }
+   }
+
+
+ 

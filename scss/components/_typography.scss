@@ -1,0 +1,55 @@
+.link {
+    text-decoration: none;
+    color: $color-secondary;
+    font-weight: bold;
+    font-family: $font-secondary;
+}
+
+.headline--primary {
+  color: $color-primary;
+  font-size: 1.5em;
+  width: 70%;
+  margin-left: 20px;
+  font-family: $font-secondary;
+}
+
+.blockquote {
+    border-left: 6px solid $color-primary;
+    height: 100%;
+    border-radius: 5px;
+    padding-left: 10px;
+    color: $text-color;
+    font-style: italic;
+    font-family: $font-primary;
+}
+
+.card,
+.headline--secondary {
+    color: $text-color;
+    font-family: $font-primary;
+}
+
+.form__label--hidden,
+.btn--default.theme--colors,
+.btn--success.theme--colors,
+.btn--error.theme--colors,
+.btn--warning.theme--colors,
+.btn--info.theme--colors,
+{
+    font-family: $font-secondary;
+}
+
+
+.nav-item,
+.theme__colors
+ {
+
+    font-family: $font-primary;
+}
+
+
+@include mq(large) {
+    .grid__col--8 {
+       width: 66.7%;
+   }
+}
