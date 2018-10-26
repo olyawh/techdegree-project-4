@@ -47,7 +47,7 @@
           flex-direction: column;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 769px) {
   .grid__col--12 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -63,7 +63,7 @@
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 769px) {
   btn--default.theme__colors {
     width: 100px;
   }
@@ -110,9 +110,14 @@
   margin-bottom: 10px;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 769px) {
   .grid__col--4 {
     width: 33.3%;
+    margin-left: 15px;
+  }
+  .form__label--hidden,
+  .form__input {
+    margin-top: 10px;
   }
 }
 
@@ -162,14 +167,16 @@
 
 .grid__row {
   margin: 20px;
+  margin-top: 30px;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 769px) {
   .grid__row {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     direction: row;
+    margin-top: 25px;
   }
   .grid__col--12.theme__colors {
     width: 100%;
@@ -222,9 +229,17 @@
   padding: 6px;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 769px) {
   .grid__col--6 {
     width: 50%;
+  }
+}
+
+@media (min-width: 769px) {
+  .img--logo {
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 }
 
@@ -238,31 +253,25 @@
           flex-direction: column;
   text-align: center;
   list-style: none;
-  margin: 0;
-  padding: 10px;
-  line-height: 35px;
+  width: 100%;
+  margin: auto;
 }
 
 .nav a {
   text-decoration: none;
   color: #686868;
+  background-color: #fff;
+  border-radius: 5px;
+  line-height: 35px;
+  padding: 5px;
 }
 
 .nav a:hover {
   color: #fff;
-}
-
-.nav li {
-  background-color: #fff;
-  margin-top: 10px;
-}
-
-.nav li:first-of-type {
   background-color: #77d9d3;
-  border-radius: 5px;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 769px) {
   .nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -271,14 +280,20 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding-left: 150%;
   }
 }
 
-@media (min-width: 1400px) {
-  .nav li {
-    padding-left: 10px;
-    margin-left: 10px;
+@media (min-width: 769px) {
+  .grid__col--9 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-right: 25px;
+    margin-top: 30px;
   }
 }
 
@@ -327,9 +342,15 @@
   font-family: "Nunito", sans-serif;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 769px) {
   .grid__col--8 {
     width: 66.7%;
+  }
+  .card {
+    margin: auto;
+    width: 90%;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

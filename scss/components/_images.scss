@@ -23,5 +23,14 @@
 @include mq(large) {
     .grid__col--6 {
         width: 50%;
+       
+    }
+}
+
+@include mq(large) {
+    .img--logo {
+        margin-left: 20px;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 }
